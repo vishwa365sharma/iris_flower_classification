@@ -8,11 +8,11 @@ st.set_page_config(page_title="Iris Flower Classification", page_icon="🌸", la
 st.markdown("""
 <style>
 .stApp{
-background: linear-gradient(138deg,#0f172a,#1e3a8a,#06b6d4);
+background: linear-gradient(135deg,#0f172a,#1e3a8a,#06b6d4);
 }
 .block-container{padding-top:2rem;}
 .card{
-background:rgba(255,255,255,.12);
+background:rgba(255,255,255,.14);
 padding:25px;border-radius:18px;
 backdrop-filter:blur(10px);
 }

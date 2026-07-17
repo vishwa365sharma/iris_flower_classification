@@ -12,7 +12,7 @@ background: linear-gradient(135deg,#0f172a,#1e3a8a,#06b6d4);
 }
 .block-container{padding-top:2rem;}
 .card{
-background:rgba(255,255,255,.14);
+background:rgba(255,255,255,.12);
 padding:25px;border-radius:18px;
 backdrop-filter:blur(10px);
 }

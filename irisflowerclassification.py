@@ -39,24 +39,21 @@ print(df.describe())
 print("\nTarget Count")
 print(df["Species"].value_counts())
 
-# ============================================
-# Step 4: Data Visualization
-# ============================================
+
+# Data Visualization
 
 df.hist(figsize=(10,8))
 plt.tight_layout()
 plt.show()
 
-# ============================================
-# Step 5: Split Features and Target
-# ============================================
+
+# Split Features and Target
 
 X = df.drop("Species", axis=1)
 y = df["Species"]
 
-# ============================================
-# Step 6: Train Test Split
-# ============================================
+
+# Train Test Split
 
 X_train, X_test, y_train, y_test = train_test_split(
     X,
@@ -65,9 +62,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     random_state=42
 )
 
-# ============================================
-# Step 7: Logistic Regression
-# ============================================
+# Logistic Regression
 
 lr = LogisticRegression(max_iter=200)
 
@@ -82,9 +77,7 @@ print("Accuracy :", acc_lr)
 print(confusion_matrix(y_test, pred_lr))
 print(classification_report(y_test, pred_lr))
 
-# ============================================
-# Step 8: KNN
-# ============================================
+# KNN
 
 knn = KNeighborsClassifier(n_neighbors=5)
 

@@ -26,7 +26,7 @@ background:#16a34a;color:white;font-weight:bold;
 
 @st.cache_resource
 def load():
-    model=pickle.load(open("model.pkl","rb"))
+    model=pickle.load(open("best_model.pkl","rb"))
     try:
         scaler=pickle.load(open("scaler.pkl","rb"))
     except:
